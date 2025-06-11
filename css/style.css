@@ -1,9 +1,10 @@
-/* style.css */
+ 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
+  background-color: antiquewhite;
 }
 
 .hero {
@@ -36,6 +37,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
+  background-color:rgb(149, 212, 234);
 }
 
 .product img {
@@ -43,6 +45,20 @@ body {
   height: auto;
   border-radius: 8px;
 }
+.product:hover {
+    background-color: #f0f0f0;  
+    transform: scale(1.05);    
+    transition: all 0.3s ease;  
+    cursor: pointer;   
+    background-color: #f4a261        
+}
+.new {
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+} 
+.new:active {
+  transform: scale(0.95);
+}
+
 
 form {
   max-width: 400px;
@@ -72,8 +88,7 @@ footer {
   padding: 20px;
   background-color: #f1f1f1;
 }
-
-/* Responsive */
+ 
 @media (max-width: 480px) {
   .products .product-list {
     flex-direction: column;
