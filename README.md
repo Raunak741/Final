@@ -30,4 +30,7 @@ interprices/
 │   └── Citrus Zest.jpeg
 │   └── Tropical Glow.jpeg
 └── README.md
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6661679261b69b0ca41faf8de56547796a3294e1
