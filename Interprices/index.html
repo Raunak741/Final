@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kyara Beverages</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
     <div class="hero-content">
-      <img src="./Screenshot 2025-06-11 121246.png" alt="Kyara Logo" class="logo" />
+      <img src="./images/Logo.png" alt="Kyara Logo" class="logo" />
       <h1>Refreshment, Reimagined</h1>
     </div>
   </header>
@@ -25,19 +25,19 @@
     <h2>Our Drinks</h2>
     <div class="product-list">
       <div class="product">
-        <img src="./Berry Bliss.jpeg" alt="Drink 1" />
+        <img src="./images/Berry Bliss.jpeg" alt="Drink 1" />
         <h3>Berry Bliss</h3>
         <p>A delicious mix of berries and millet.</p>
         <button class = "new">Add To Cart</button>
       </div>
       <div class="product">
-        <img src="./Citrus Zest.jpeg" alt="Drink 2" />
+        <img src="./images/Citrus Zest.jpeg" alt="Drink 2" />
         <h3>Citrus Zest</h3>
         <p>Refreshing citrus with a millet twist.</p>
         <button class = "new">Add To Cart</button>
       </div>
       <div class="product">
-        <img src="./Tropical Glow.jpeg" alt="Drink 3" />
+        <img src="./images/Tropical Glow.jpeg" alt="Drink 3" />
         <h3>Tropical Glow</h3>
         <p>Mango, pineapple, and healthy grains.</p>
         <button class = "new">Add To Cart</button>
@@ -58,5 +58,17 @@
   <footer>
     <p>&copy; 2025 Kyara Beverages</p>
   </footer>
+  <script>  
+  const buttons = document.querySelectorAll(".new");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      button.textContent = "Added to Cart";
+      button.disabled = true;  
+      button.style.backgroundColor = "#999";  
+    });
+  });
+</script>
+ 
 </body>
 </html>
